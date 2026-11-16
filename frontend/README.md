@@ -33,4 +33,6 @@ The corporate landing page is at `/`; open `/app` to test the interactive protot
 - Demo progress is stored locally under `shykey:v1`; reset it from Profile.
 - The message-reading screen uses fixed illustrative readings. It does not send or persist pasted text in the mock experience.
 - The UI uses the documented fixed support levels without presenting them as probabilities.
+- Landing-page icons use Font Awesome Free solid icons.
+- The landing page uses a sample YouTube embed; replace it with Shykey’s walkthrough before launch.
 - No PWA, authentication, or live backend integration is enabled in this frontend milestone.
