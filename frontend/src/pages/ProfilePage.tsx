@@ -11,7 +11,7 @@ export function ProfilePage() {
 
   function reset() {
     resetDemo();
-    navigate('/');
+    navigate('/app');
   }
 
   return (

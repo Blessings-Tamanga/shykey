@@ -19,14 +19,14 @@ src/
   data/        Temporary demo content and sample readings
   hooks/       Shared demo state and theme behavior
   layouts/     Shared routed application shell
-  pages/       Home, Mission, Check-in, Win, Chat, Read, and Profile screens
+  pages/       Marketing landing page and Home, Mission, Check-in, Win, Chat, Read, and Profile screens
   services/    Mock service and typed FastAPI-compatible service adapter
   styles/      Design tokens, responsive styling, and reusable UI styles
   types/       Shared application and service contracts
   utils/       Local demo persistence and optional haptics
 ```
 
-The app uses React Router paths `/`, `/mission`, `/checkin`, `/win`, `/chat`, `/read`, and `/profile`. `mockApi` is the active service, so screens work without a backend. Mock copy and example outputs live in `src/data/mockData.ts`; service contracts and the replaceable API adapter live in `src/services/`. The adapter targets documented `/v1` FastAPI endpoints and can be created with `createApiService(baseUrl, getAccessToken)` when the backend is ready. Client-side streak and mission data are demo state, not authoritative records.
+The corporate landing page is at `/`; open `/app` to test the interactive prototype. The prototype screens are available at `/mission`, `/checkin`, `/win`, `/chat`, `/read`, and `/profile`. `mockApi` is the active service, so screens work without a backend. The waitlist form is also in demo mode and does not send or store email addresses. Mock copy and example outputs live in `src/data/mockData.ts`; service contracts and the replaceable API adapter live in `src/services/`. The adapter targets documented `/v1` FastAPI endpoints and can be created with `createApiService(baseUrl, getAccessToken)` when the backend is ready. Client-side streak and mission data are demo state, not authoritative records.
 
 ## Notes
 

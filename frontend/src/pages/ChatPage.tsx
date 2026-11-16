@@ -53,7 +53,7 @@ export function ChatPage() {
     <Screen className="chat-screen">
       <div className="top chat-header">
         <div className="coach-identity"><Mascot size={40} /><b>Coach</b></div>
-        <Button className="icon-button" variant="icon" onClick={() => navigate('/')} aria-label="Close chat"><Icon path={ICONS.close} /></Button>
+        <Button className="icon-button" variant="icon" onClick={() => navigate('/app')} aria-label="Close chat"><Icon path={ICONS.close} /></Button>
       </div>
       <div className="chat-messages" aria-live="polite">
         {messages.map((message, index) => <div key={index} className={`bubble ${message.from}`}>{message.text}</div>)}

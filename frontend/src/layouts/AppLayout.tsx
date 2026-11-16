@@ -1,9 +1,7 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 export function AppLayout() {
-  return (
-    <div className="app-frame">
-      <Outlet />
-    </div>
-  );
+  const { pathname } = useLocation();
+  const className = pathname === '/' ? 'app-frame marketing-frame' : 'app-frame';
+  return <div className={className}><Outlet /></div>;
 }

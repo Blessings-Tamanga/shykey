@@ -5,6 +5,7 @@ import {
   ChatPage,
   CheckinPage,
   HomePage,
+  MarketingPage,
   MissionPage,
   NotFoundPage,
   ProfilePage,
@@ -18,7 +19,8 @@ export function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>
-            <Route index element={<HomePage />} />
+            <Route index element={<MarketingPage />} />
+            <Route path="app" element={<HomePage />} />
             <Route path="mission" element={<MissionPage />} />
             <Route path="checkin" element={<CheckinPage />} />
             <Route path="win" element={<WinPage />} />

@@ -1,6 +1,7 @@
 export { ChatPage } from './ChatPage';
 export { CheckinPage } from './CheckinPage';
 export { HomePage } from './HomePage';
+export { MarketingPage } from './MarketingPage';
 export { MissionPage } from './MissionPage';
 export { NotFoundPage } from './NotFoundPage';
 export { ProfilePage } from './ProfilePage';

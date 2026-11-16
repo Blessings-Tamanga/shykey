@@ -46,7 +46,7 @@ export function CheckinPage() {
       {notYet ? (
         <>
           <Button disabled={saving} onClick={() => void shrinkMission()}>{saving ? 'Saving…' : 'Make it smaller'}</Button>
-          <Button variant="ghost" disabled={saving} onClick={() => navigate('/')}>Back home</Button>
+          <Button variant="ghost" disabled={saving} onClick={() => navigate('/app')}>Back home</Button>
         </>
       ) : (
         <div className="checkin-options">

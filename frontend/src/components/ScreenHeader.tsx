@@ -6,7 +6,7 @@ export function ScreenHeader() {
   const navigate = useNavigate();
   return (
     <div className="top">
-      <Button className="icon-button close-button" variant="icon" onClick={() => navigate('/')} aria-label="Back home">
+      <Button className="icon-button close-button" variant="icon" onClick={() => navigate('/app')} aria-label="Back home">
         <Icon path={ICONS.close} />
       </Button>
     </div>

@@ -39,7 +39,7 @@ export function WinPage() {
       <h2 className="win-title">day streak. That’s real-world courage.</h2>
       <div className="stage"><Mascot size={170} happy /></div>
       <Button className="offer-button" onClick={() => setOffer('details')}>See the 6-week program</Button>
-      <Button variant="ghost" onClick={() => navigate('/')}>Back home</Button>
+      <Button variant="ghost" onClick={() => navigate('/app')}>Back home</Button>
       {offer !== 'closed' && (
         <div className="offer-overlay" onClick={() => setOffer('closed')}>
           <section className="offer-sheet" role="dialog" aria-modal="true" aria-labelledby="offer-title" onClick={(event) => event.stopPropagation()}>
