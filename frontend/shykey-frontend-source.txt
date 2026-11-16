@@ -1,0 +1,4238 @@
+﻿
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\index.html ==========
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f2efe9" />
+    <meta name="description" content="Build social confidence, one small real-world rep at a time." />
+    <title>Shykey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\package-lock.json ==========
+{
+  "name": "shykey-frontend",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "shykey-frontend",
+      "version": "1.0.0",
+      "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-router-dom": "^7.6.0"
+      },
+      "devDependencies": {
+        "@types/react": "^19.1.0",
+        "@types/react-dom": "^19.1.0",
+        "@vitejs/plugin-react": "^5.0.0",
+        "typescript": "~5.8.3",
+        "vite": "^7.0.0"
+      }
+    },
+    "node_modules/@babel/code-frame": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz",
+      "integrity": "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-validator-identifier": "^7.29.7",
+        "js-tokens": "^4.0.0",
+        "picocolors": "^1.1.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/compat-data": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.7.tgz",
+      "integrity": "sha512-locTkQyKvwIEgBzVrn8693ebc97F2U8ZHjbXwDXJ5Fn2TCpNwTlKcaKLkdHop5c/icOFE7qt7Q9JC5hnKNa6Gg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/core": {
+      "version": "7.29.13",
+      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.29.13.tgz",
+      "integrity": "sha512-j1nvOQCZYSgp7HLmisnCXFTpVvFODiijQ9QHkORfGKWH6YDtskTEeCJS7eV545GZ9UBzrq0e2xsOd5QQ5PjIqw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/generator": "^7.29.13",
+        "@babel/helper-compilation-targets": "^7.29.13",
+        "@babel/helper-module-transforms": "^7.29.13",
+        "@babel/helpers": "^7.29.13",
+        "@babel/parser": "^7.29.13",
+        "@babel/template": "^7.29.7",
+        "@babel/traverse": "^7.29.13",
+        "@babel/types": "^7.29.11",
+        "@jridgewell/remapping": "^2.3.5",
+        "convert-source-map": "^2.0.0",
+        "debug": "^4.1.0",
+        "gensync": "^1.0.0-beta.2",
+        "json5": "^2.2.3",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/babel"
+      }
+    },
+    "node_modules/@babel/generator": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.29.14.tgz",
+      "integrity": "sha512-qSY56jgW5JnSXzuekLVil6zaOQxOCtOHidr65KkaMBw772IuAY28Qx4ZykAcDn8+FRF15qk80XzKwgSc/RYW6g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.29.14",
+        "@babel/types": "^7.29.14",
+        "@jridgewell/gen-mapping": "^0.3.12",
+        "@jridgewell/trace-mapping": "^0.3.28",
+        "jsesc": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-compilation-targets": {
+      "version": "7.29.13",
+      "resolved": "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.29.13.tgz",
+      "integrity": "sha512-8WxJ4/Vmes3ghacj8VOJy3NW8eyHiFY/4thU/LSBuBE470+igjR/j1ZTNn8fV5VdNrLx6iXUwig526UdOvfP0w==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/compat-data": "^7.29.7",
+        "@babel/helper-validator-option": "^7.29.7",
+        "browserslist": "^4.24.0",
+        "lru-cache": "^5.1.1",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-globals": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz",
+      "integrity": "sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-imports": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz",
+      "integrity": "sha512-ejHwrQQYcm9xnTivShn2IDOlIzInN34AXskvq9QicvCtEzq1Vzclu/tKF8Jq1Cg8JG2GL6/EmjgsCT7lXepE3g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/traverse": "^7.29.7",
+        "@babel/types": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-transforms": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.14.tgz",
+      "integrity": "sha512-2XDvQVd9JESaOgGc4jT2/jquTAO7ppA5noTZQqH+MmZ89yjCzScLwtCPbWtkPZylL+TLWR49IwWmk+QkRR4GsA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-module-imports": "^7.29.7",
+        "@babel/helper-validator-identifier": "^7.29.7",
+        "@babel/traverse": "^7.29.14"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0"
+      }
+    },
+    "node_modules/@babel/helper-plugin-utils": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.29.7.tgz",
+      "integrity": "sha512-G7sHYigPY17oO5SYWnfD/0MTBwVR781S/JI643e/JhUYgVgWE/61SoW3NH9KWUKyKq5LVh3npif99Wkt6j86Jw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-string-parser": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.14.tgz",
+      "integrity": "sha512-CXvKMFvM80ihI7Vox9jb+kQjnyjESQNPM+vB7U0Zz6TWuZA+Z/FL0QPMH300h33qJtIx+REeBhXqWOPW48TcAQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-identifier": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz",
+      "integrity": "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-option": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.29.7.tgz",
+      "integrity": "sha512-N9ZErrD+yW5geCDtBqnOoxmR8+tNKiGuxKlDpuJxfsqpa2dFcexaziGAE/qoHLiDDreVNMupxGmSoNlyvsA3gw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helpers": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.14.tgz",
+      "integrity": "sha512-6E3Mi1r0B0umq6vmZa4/78q+64fqO2YY0THUdjDPKUCKhNb0yQy5NQIaPHCSD3ryTgiTss//P4JsWS80AsZ6LQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/template": "^7.29.7",
+        "@babel/types": "^7.29.14"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/parser": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.29.14.tgz",
+      "integrity": "sha512-VL220vXuyO2z3rNIQwY7ftj9UwpqOt+33sH+sBWkOekbsSR2g7EEMnOx24ZlCH0xOA3DM/33SifVFGbnJD8r/w==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.29.14"
+      },
+      "bin": {
+        "parser": "bin/babel-parser.js"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@babel/plugin-transform-react-jsx-self": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.29.7.tgz",
+      "integrity": "sha512-TL0hMc9xzy86VD31nUiwzd5otRAcyEPcsegCxolO0PvcXuH1v0kECe/UIznYFihpkvU5wg/jk4v0TTEFfm53fw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-plugin-utils": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0-0"
+      }
+    },
+    "node_modules/@babel/plugin-transform-react-jsx-source": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.29.7.tgz",
+      "integrity": "sha512-06IyK09H3wi4cGbhDBwp5gUGo0IKtnYa8tyTiephirPCK6fbobVGiXMMI5zLQ4aKEYP3wZ3ArU44o+8KMrSG/Q==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-plugin-utils": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0-0"
+      }
+    },
+    "node_modules/@babel/template": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz",
+      "integrity": "sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "@babel/types": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/traverse": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.14.tgz",
+      "integrity": "sha512-RAdQJrBgmIH1FWvN0X+1hoDxzMzlP4cv/1Zi4dn4tG1H0cTb+rw7CzUxQJhp1f4ANd8j5vH3fy8BAWFGkBDEsA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/generator": "^7.29.14",
+        "@babel/helper-globals": "^7.29.7",
+        "@babel/parser": "^7.29.14",
+        "@babel/template": "^7.29.7",
+        "@babel/types": "^7.29.14",
+        "debug": "^4.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/types": {
+      "version": "7.29.14",
+      "resolved": "https://registry.npmjs.org/@babel/types/-/types-7.29.14.tgz",
+      "integrity": "sha512-UjI/dKmwJwT9pOszJitq2G6EObZPnsZUfdCr92z2TlF3EZK9J3EdfOKUrCzHl6wFthbzwhzl1Soc/UIwxRiq6w==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-string-parser": "^7.29.14",
+        "@babel/helper-validator-identifier": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@esbuild/aix-ppc64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.28.2.tgz",
+      "integrity": "sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "aix"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-arm": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.28.2.tgz",
+      "integrity": "sha512-kXXoiPVVGQcnIYGOeaovwOURpniDBpSq4A03qkQ+BMQqtGG6HYap3xne9C1O1yo4TR3qxlCX5IqqmX6fFo2Lqg==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.28.2.tgz",
+      "integrity": "sha512-5YfKeeI8qWfBZIX+u2xZC3Zlb3Os/gLS2sbEKM+I4ZOcsWmHS2WLysCcQZDAFRslDUU5Oiq44gf6PYN1vGwG5A==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/android-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.28.2.tgz",
+      "integrity": "sha512-O387ite7SzUyCcy3JQX4P4bLtEA7bLLkx+esve5JHnyYfNTxcVpXZo9jhdB0lTKN44gztELTdU7nS8Nr16Fs1Q==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/darwin-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.28.2.tgz",
+      "integrity": "sha512-n4KqkOQrraxHJcgjM1RvwbigfQKIKJVpM7xp+KsxiyUSrRdIXnt73VhrPAx0fV44hgfmIVKjxMN9J1t5jySVkw==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/darwin-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.28.2.tgz",
+      "integrity": "sha512-uq6suIWYP37qzGddBKPw5QEQPi6HiLGsO7UmkpfyaYNQ3D+rN6w6WfwH+nuqcGXWvawGwxOEroO4YGnFh95azw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/freebsd-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.28.2.tgz",
+      "integrity": "sha512-n+I0BTSRIoy+d6RPKnEVwql5UwBJolytvY4mAOIEJorKlqgPII8ix6slVVrfZ5Tnj7glIZvloylbB/EJPMWEXw==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/freebsd-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.28.2.tgz",
+      "integrity": "sha512-78XJTJkvPs0kz2w61301PJjXl4g7q3JqiYMZ/M/yVI73EHBrCRTgkhu9oqG7vPqq+a/yadEW8aD+agKlk5xrmg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-arm": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.28.2.tgz",
+      "integrity": "sha512-XlDnu2q5yoqems+xay6wSAcg9DDD7K9RLKZEBOMZm3ckNpJBvOX20tSfby8KfrrhINDyv9V2YVZKY/SpoGJI8w==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.28.2.tgz",
+      "integrity": "sha512-pW4AC0P3it8c7do9MVM4p51FzHzdM/TZrerurgRcHJ2WTa1VQ1CIq18xncfpBJw4ojkiZZrKW2yIBWBP92j6Ug==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-ia32": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.28.2.tgz",
+      "integrity": "sha512-CYbnj78HsIeA+DhgUKgFCfvNsTHFhMMrinUrMZpDXJXKN8T3XViTZ/+wtHeVxEWY8ewSzTFN+nRmSwO2tZaLUQ==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-loong64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.28.2.tgz",
+      "integrity": "sha512-buwkd8nsph4R+ajRvw0qM5Hja/TXQow3ptzWO2EbG/cqcIkHloRrdlBtQlshyYGTNFvfkfJ5tpPLVkY4DtsPfQ==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-mips64el": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.28.2.tgz",
+      "integrity": "sha512-ZVykbDyk7519VwiNb9Lcj9m8XM6v5V9uKPvrEMkkEedVewf+0itkhahp4HDpgERXhwLRpWFypsGbG/J8s0QjJA==",
+      "cpu": [
+        "mips64el"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-ppc64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.28.2.tgz",
+      "integrity": "sha512-CAXl+Dtd9UUuJd8pKKdwh6MLm3MUMiqMPmhZ3tTSXPqfyQ3vDl6R5hZdZ/kYojK4ofXtdfSv1tFq8XzWx3heNQ==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-riscv64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.28.2.tgz",
+      "integrity": "sha512-GeXCej4IQtU1B+QlDV8W/RRvbzI3O/Stss+/bCXv4lZls5WGRtu2a+3JkA3i4qIUlMXpcHebWpF8AkJhATowuA==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-s390x": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.28.2.tgz",
+      "integrity": "sha512-3H1weTYZPxt/WOhByszQZybS9w5lKzUn1FDMsgEChbHWQwHYQQRfBxgCcZvPhjHfKyJjIievvMmEUawJrdY9Dg==",
+      "cpu": [
+        "s390x"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/linux-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.28.2.tgz",
+      "integrity": "sha512-4xTZr1FUmSoQW4XIWmit3tzQrUTZM+N3P0XV8xROKYF50XfI7xeO90+1bZvNwxIufQ9hDQVRJH5YhgPVF8A/HQ==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/netbsd-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.28.2.tgz",
+      "integrity": "sha512-sSATRjPeDBg3pdgHoQfoYBob11Kk1FGa9lui5RIHZCoCkJa9QKlvl3/vKz2usCmYYjs7ymJR/2Nnsqe+Hjt5nw==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/netbsd-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.28.2.tgz",
+      "integrity": "sha512-lqnzCV+mM0gIADaKihiCg6ifgfU2L3h5E33rNQBN1Y4MaVGnzryzmvvf7UHxprpQdE8hpqLolJ9Rl+SkIRDpyw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openbsd-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.28.2.tgz",
+      "integrity": "sha512-AL2qJILH7lNjrDmCQDvdxMfAUIv8KMNZOvrwAQ8i8//ntL9FflhOyMJ8OZSMBb8/AWXe3/5v5S20y3zCoZWKoQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openbsd-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.28.2.tgz",
+      "integrity": "sha512-QtiuPytchRyC4rwUKhexJdQKvDuZ6hWloi3igqPQNUJCS1/v9EiO3UTOXR6A3FoMo4fnAKbWJdqaIwhOzh8qEw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/openharmony-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.28.2.tgz",
+      "integrity": "sha512-WkhYDmpTjLvGlScA1rwjRUmhl4k8oXR3cIbtqWmELgU/dFeHHlEllxDvdWcNJV9rbzCexB5vz8gtNewWLgCT7Q==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openharmony"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/sunos-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.28.2.tgz",
+      "integrity": "sha512-GPMSkTOtMnv2U2F8gxe4Io6qmVs+YKyp832Etqqxr0hFngmXQ3rzwytelm3GIn7T4VviRUlf3sOgBOiTdvaf7g==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "sunos"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-arm64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.28.2.tgz",
+      "integrity": "sha512-PIhhEkE9uPBleRBrQEJpUn7MBnibZzbGzYWPmY3x+YoVg/95zbjB4CxPPOQ8l5tYYM4mMaCthF8/1DIfBQQyWQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-ia32": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.28.2.tgz",
+      "integrity": "sha512-YmJbfTlvU7Sdn9BB+4PRES4oB6pxgS37MAONj+hBr/cpXS1aBPKXxNnDbu+QCWPj0o9dgyxeq79g6c5P8KeuYA==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@esbuild/win32-x64": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.2.tgz",
+      "integrity": "sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@jridgewell/gen-mapping": {
+      "version": "0.3.13",
+      "resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/sourcemap-codec": "^1.5.0",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/remapping": {
+      "version": "2.3.5",
+      "resolved": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
+      "integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/gen-mapping": "^0.3.5",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.3.tgz",
+      "integrity": "sha512-lhTtjtoEArWBjismtfS761S9Hlyn+nIZqOZVYoZ1Xn82PMNMVnk+jj/NhC4fAXGTs7ydONcJiR5vyQBTMDu27g==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.31",
+      "resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/resolve-uri": "^3.1.0",
+        "@jridgewell/sourcemap-codec": "^1.4.14"
+      }
+    },
+    "node_modules/@rolldown/pluginutils": {
+      "version": "1.0.0-rc.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.3.tgz",
+      "integrity": "sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@rollup/rollup-android-arm-eabi": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.68.3.tgz",
+      "integrity": "sha512-mqfypgH/liYjaSCoPI4erckUcROgZtmFUUmyOJ05oyayi/tVqOEYAzWP7ufqCoCT3xB31Fw4XIVO/jX42hYvKA==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ]
+    },
+    "node_modules/@rollup/rollup-android-arm64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.68.3.tgz",
+      "integrity": "sha512-5tY+GC/1gpt79cKS2DQzu6iD824j6BmI4q5Zb6qftZ4kWqIQmvR3DD4eJ2Gclu6/nVMYDk2IVpqxypWOiAuWJg==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ]
+    },
+    "node_modules/@rollup/rollup-android-x64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-android-x64/-/rollup-android-x64-4.68.3.tgz",
+      "integrity": "sha512-nDBcQ/o3PMmGxmAzGBJFn+n1rb83Va9WSdFIq1AHmlEF3tuibVsyJ3kG5x13r7VIy6WI8SvzCdHVNSlSDIdj8w==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ]
+    },
+    "node_modules/@rollup/rollup-darwin-arm64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.68.3.tgz",
+      "integrity": "sha512-dra5zl0QWKkIkaMgNDNPC19gkMlPAfAf41yWlkGztXMIvUQrX9XWZFQRw7abhH3nks+XZGQpybINAxT2pKdFew==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ]
+    },
+    "node_modules/@rollup/rollup-darwin-x64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.68.3.tgz",
+      "integrity": "sha512-xo5xeo/AjEB/ArzQjGn0JRDZuybZicQ5O3VPfko6ocH1li/qNrN4p5+R/WgjavzRz6UwAOaqsau7VvRQA6i6AA==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ]
+    },
+    "node_modules/@rollup/rollup-freebsd-arm64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.68.3.tgz",
+      "integrity": "sha512-zdckkcxHDEEKyDbC1t21DeaaiKGymxbkBU9c3zyfaaz+8N96ItJw4nmzHhZF+Mukgt906fnf2tsc90pVyStuHA==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-freebsd-x64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.68.3.tgz",
+      "integrity": "sha512-9oXqI7g/ycEz7TyicdGBC4sL6PfWMXAx8u15f/nd7lYkCLJd8U8VdBfbpc4SSnRBU/e7aPALve3mhzasGDeCYg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm-gnueabihf": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.68.3.tgz",
+      "integrity": "sha512-hbgT4NlaOELE3D5UUzSqF+OFgwz4Scvo2SQD9nZJUFjdIsg9Kg3FabQauUxkHKY9N5yjNXfXRRmiKNN4JpLmFA==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm-musleabihf": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.68.3.tgz",
+      "integrity": "sha512-yECcXZ/Bl+JVRhLFgld42rYrXgPdE0LtySGAmmmH6OtkaJM17A4cWG/eCzDymMVb52/jZjW0R54YrTHj4xXlSA==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.68.3.tgz",
+      "integrity": "sha512-q4Q4/B7wyqM+TFqY5tJYQlaz5+ksGopcRmMeMdu4q6eaPK7N1PymTjIaH5LL32mMJBqIzpRof7BhlYLim5JgNQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm64-musl": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.68.3.tgz",
+      "integrity": "sha512-Ich3TGl/7GqhQ6G6jVPzgGQGJjd3E5hECxSVanPYchy6Vwcq+WI8wG/gmEMilHNy+ZYCR6U8EN50EejG3TaIgw==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-loong64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-gnu/-/rollup-linux-loong64-gnu-4.68.3.tgz",
+      "integrity": "sha512-URBmOhwv4Y0Hi5Hhxc3cmqZLtQlx55DOs5PUhhITDC3zu0qwAfhcNAFAIwAhOUdA6NFVEck07CNZX6cBEs1vTg==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-loong64-musl": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-musl/-/rollup-linux-loong64-musl-4.68.3.tgz",
+      "integrity": "sha512-PTdJXuZplRyaE3ECArlbZubI2LlUHWm0oCipCexnE/8LM+L7qIqUiNbU0piBxt46EB5zxXX+cpmDvHX4Z3WwcQ==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-ppc64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-gnu/-/rollup-linux-ppc64-gnu-4.68.3.tgz",
+      "integrity": "sha512-IlSQPDExSm9YdtrWeZIHj87GPXI9lYygRvHVwQ1o9t91JHIiB2CihrvNIASpc/zI28atqm04jS3proaQuaJMww==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-ppc64-musl": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-musl/-/rollup-linux-ppc64-musl-4.68.3.tgz",
+      "integrity": "sha512-O2ssyDcBTZkH5v2P/9ZaXJreL0hCKvUA5UwuHn0jCKeMLKi4GhspZJ1I5FT5QsHtJ/dPx4pup7pg/Lw0emeY0Q==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-riscv64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.68.3.tgz",
+      "integrity": "sha512-fesqagxcnc87lH2+aBWne/tFCmQVIGH+YezjY1wQwbUODuTBBlhHoyxju6umwn8LnjHVanjpoeaQdLsXP8JQSQ==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-riscv64-musl": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.68.3.tgz",
+      "integrity": "sha512-WAjFDtLW3HjJ2RAytKoWdFwlK/hW8rJHrjhRZFw14nR+c9JN//WIlSBkyXUjEYCNOFs2sGLNutOEPQG4iVYHgA==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-s390x-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.68.3.tgz",
+      "integrity": "sha512-+fZiTeHV/1fy/14dRqE4thjYwUOABL6qQjxElOEQg2oHLkCamO8dxhHphVgD4+pFxtVEUIWxsGVduPtwnAlvbg==",
+      "cpu": [
+        "s390x"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-x64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.68.3.tgz",
+      "integrity": "sha512-pfn4Zd9Ic3lEaSwW3GsQhTIDd7929C+eiEkOutsSCT2IHD6rDLblwmMQkgeGOso0oDo9Jk/ERtFdtFr9ElLs+g==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "libc": [
+        "glibc"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-x64-musl": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.68.3.tgz",
+      "integrity": "sha512-eUXzaeNQbKXKNqseL3g/usUqOPmRu+DbQsvwr9MXMdV+VQFUNb9bcWSNAAs/TRV95PCbFK46kLzHEOhFSzujsg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "libc": [
+        "musl"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-openbsd-x64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-openbsd-x64/-/rollup-openbsd-x64-4.68.3.tgz",
+      "integrity": "sha512-OiUclE7QDU4H/hr3ACRHhVGKWl+gNx+6Emignfq0hmNmzzTkZnT79wzB9NXKd0QH16S4t/wVqlAFBfC17nkZ5A==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openbsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-openharmony-arm64": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.68.3.tgz",
+      "integrity": "sha512-s6EclDWmk6zvIfk1yixgYthk7xHNx0xu5cEF5RDpS4IHNTpfswRX6xOXVG5cHF5xWn0B6EpDGARhPQ520KTlsA==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openharmony"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-arm64-msvc": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.68.3.tgz",
+      "integrity": "sha512-G2xnmxGnU8XHLwtjnnXNRcLrub+Af3nm9VQ1QzL2aEiAL7woBdRgTCZBslJl8umA+YMqdEFpUh9kJB/Vyzk2wQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-ia32-msvc": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.68.3.tgz",
+      "integrity": "sha512-Y/4tApNVrMUYWbAHsyRWJgwuuJOfhTNhA2B04Xpa6+G9btkPZ9kU3XagUKzPTwF3hg36NpQk748JsnoTVho67Q==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-x64-gnu": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.68.3.tgz",
+      "integrity": "sha512-i2vH/OA5BcW+TdNg12ZTRC4rn+vILaPMP9CvHqnv+QEpMjBHGGNLo4k4EnEqzjYvTD6x1Xark9WhsQbH4bTzUQ==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-x64-msvc": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.68.3.tgz",
+      "integrity": "sha512-ADb1Uz2MNM0sxVpAlMNdQG16Hw4sgW1aqVL7NeqBMpcZeiHb192d7W6shZdMQs33D+w9ihDYBBPsYqqc4MlD8w==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@types/babel__core": {
+      "version": "7.20.5",
+      "resolved": "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz",
+      "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.20.7",
+        "@babel/types": "^7.20.7",
+        "@types/babel__generator": "*",
+        "@types/babel__template": "*",
+        "@types/babel__traverse": "*"
+      }
+    },
+    "node_modules/@types/babel__generator": {
+      "version": "7.27.0",
+      "resolved": "https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz",
+      "integrity": "sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.0.0"
+      }
+    },
+    "node_modules/@types/babel__template": {
+      "version": "7.4.4",
+      "resolved": "https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz",
+      "integrity": "sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.1.0",
+        "@babel/types": "^7.0.0"
+      }
+    },
+    "node_modules/@types/babel__traverse": {
+      "version": "7.28.0",
+      "resolved": "https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz",
+      "integrity": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.28.2"
+      }
+    },
+    "node_modules/@types/estree": {
+      "version": "1.0.10",
+      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.10.tgz",
+      "integrity": "sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@types/react": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+      "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "csstype": "^3.2.2"
+      }
+    },
+    "node_modules/@types/react-dom": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+      "integrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==",
+      "dev": true,
+      "license": "MIT",
+      "peerDependencies": {
+        "@types/react": "^19.3.0"
+      }
+    },
+    "node_modules/@vitejs/plugin-react": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.2.0.tgz",
+      "integrity": "sha512-YmKkfhOAi3wsB1PhJq5Scj3GXMn3WvtQ/JC0xoopuHoXSdmtdStOpFrYaT1kie2YgFBcIe64ROzMYRjCrYOdYw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/core": "^7.29.0",
+        "@babel/plugin-transform-react-jsx-self": "^7.27.1",
+        "@babel/plugin-transform-react-jsx-source": "^7.27.1",
+        "@rolldown/pluginutils": "1.0.0-rc.3",
+        "@types/babel__core": "^7.20.5",
+        "react-refresh": "^0.18.0"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
+      }
+    },
+    "node_modules/baseline-browser-mapping": {
+      "version": "2.11.37",
+      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.37.tgz",
+      "integrity": "sha512-QYph+vfurmaxhNwi9FprfmtkT5cx2Keg8FzZ0vnjO8ukscIybVyZGMFwdllKGlTI6qyU8ck43OM9UXh+IFJihQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "bin": {
+        "baseline-browser-mapping": "dist/cli.cjs"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/browserslist": {
+      "version": "4.29.5",
+      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.29.5.tgz",
+      "integrity": "sha512-khTmKu5NGYTotqcYo8Bew2k4RAE9PuXRSFRXG2lQBrCEQHyeQ/vX6gKMxfokwywBsLiXZMnHsmWMG1pnO8J7uQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "baseline-browser-mapping": "^2.11.33",
+        "caniuse-lite": "^1.0.30001819",
+        "electron-to-chromium": "^1.5.464",
+        "node-releases": "^2.0.60",
+        "update-browserslist-db": "^1.3.4"
+      },
+      "bin": {
+        "browserslist": "cli.js"
+      },
+      "engines": {
+        "node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"
+      }
+    },
+    "node_modules/caniuse-lite": {
+      "version": "1.0.30001826",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001826.tgz",
+      "integrity": "sha512-wTB+9tIbLro/BCXwLuNV1meHE4L9dS6dArMDwgYfNBPMYScqClHyGunhkCSDtHhe/69Xl0sHlKgBVZ+fNsYtWA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/caniuse-lite"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    "node_modules/convert-source-map": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
+      "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/cookie": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
+      "integrity": "sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/express"
+      }
+    },
+    "node_modules/csstype": {
+      "version": "3.2.3",
+      "resolved": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/debug": {
+      "version": "4.4.3",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+      "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "ms": "^2.1.3"
+      },
+      "engines": {
+        "node": ">=6.0"
+      },
+      "peerDependenciesMeta": {
+        "supports-color": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/electron-to-chromium": {
+      "version": "1.5.485",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.485.tgz",
+      "integrity": "sha512-m3uadzR0Z+sR19HGWgfxoZcKv9hE/edVM9OZ+FJ4wNRyfuFtkwZJIDoehEty5sisYVwmge8lKV1tenWOyClVgw==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/esbuild": {
+      "version": "0.28.2",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.28.2.tgz",
+      "integrity": "sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "bin": {
+        "esbuild": "bin/esbuild"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "optionalDependencies": {
+        "@esbuild/aix-ppc64": "0.28.2",
+        "@esbuild/android-arm": "0.28.2",
+        "@esbuild/android-arm64": "0.28.2",
+        "@esbuild/android-x64": "0.28.2",
+        "@esbuild/darwin-arm64": "0.28.2",
+        "@esbuild/darwin-x64": "0.28.2",
+        "@esbuild/freebsd-arm64": "0.28.2",
+        "@esbuild/freebsd-x64": "0.28.2",
+        "@esbuild/linux-arm": "0.28.2",
+        "@esbuild/linux-arm64": "0.28.2",
+        "@esbuild/linux-ia32": "0.28.2",
+        "@esbuild/linux-loong64": "0.28.2",
+        "@esbuild/linux-mips64el": "0.28.2",
+        "@esbuild/linux-ppc64": "0.28.2",
+        "@esbuild/linux-riscv64": "0.28.2",
+        "@esbuild/linux-s390x": "0.28.2",
+        "@esbuild/linux-x64": "0.28.2",
+        "@esbuild/netbsd-arm64": "0.28.2",
+        "@esbuild/netbsd-x64": "0.28.2",
+        "@esbuild/openbsd-arm64": "0.28.2",
+        "@esbuild/openbsd-x64": "0.28.2",
+        "@esbuild/openharmony-arm64": "0.28.2",
+        "@esbuild/sunos-x64": "0.28.2",
+        "@esbuild/win32-arm64": "0.28.2",
+        "@esbuild/win32-ia32": "0.28.2",
+        "@esbuild/win32-x64": "0.28.2"
+      }
+    },
+    "node_modules/escalade": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz",
+      "integrity": "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/fdir": {
+      "version": "6.5.0",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "peerDependencies": {
+        "picomatch": "^3 || ^4"
+      },
+      "peerDependenciesMeta": {
+        "picomatch": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/fsevents": {
+      "version": "2.3.3",
+      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
+      }
+    },
+    "node_modules/gensync": {
+      "version": "1.0.0-beta.2",
+      "resolved": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+      "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/js-tokens": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/jsesc": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz",
+      "integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "jsesc": "bin/jsesc"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/json5": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+      "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "json5": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/lru-cache": {
+      "version": "5.1.1",
+      "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
+      "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "yallist": "^3.0.2"
+      }
+    },
+    "node_modules/ms": {
+      "version": "2.1.3",
+      "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/nanoid": {
+      "version": "3.3.20",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz",
+      "integrity": "sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "bin": {
+        "nanoid": "bin/nanoid.cjs"
+      },
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    "node_modules/node-releases": {
+      "version": "2.0.64",
+      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.64.tgz",
+      "integrity": "sha512-zAPCKqMcnqs2nGy6nlkm7JduFseiBJy3EXHGLh+8pFR+TxGCBxxiEN21+UROU5CKwX/f4TlUcYjiM+vs/tsyxw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/picomatch": {
+      "version": "4.0.7",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+      "integrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/jonschlinkert"
+      }
+    },
+    "node_modules/postcss": {
+      "version": "8.5.32",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.32.tgz",
+      "integrity": "sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "nanoid": "^3.3.20",
+        "picocolors": "^1.1.1",
+        "source-map-js": "^1.2.2"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/react": {
+      "version": "19.3.1",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.3.1.tgz",
+      "integrity": "sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-dom": {
+      "version": "19.3.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz",
+      "integrity": "sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==",
+      "license": "MIT",
+      "dependencies": {
+        "scheduler": "^0.28.0"
+      },
+      "peerDependencies": {
+        "react": "^19.3.1"
+      }
+    },
+    "node_modules/react-refresh": {
+      "version": "0.18.0",
+      "resolved": "https://registry.npmjs.org/react-refresh/-/react-refresh-0.18.0.tgz",
+      "integrity": "sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-router": {
+      "version": "7.18.5",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-7.18.5.tgz",
+      "integrity": "sha512-dTgvcXDOrLPrlLHrcZAqWveiK1hMSqN+rGAJzegP8HtmNkfRxOoshGWBNX3ZJ0cZjOHkRdlUJtaIhZMLLyGyPw==",
+      "license": "MIT",
+      "dependencies": {
+        "cookie": "^1.0.1",
+        "set-cookie-parser": "^2.6.0"
+      },
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/react-router-dom": {
+      "version": "7.18.5",
+      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.5.tgz",
+      "integrity": "sha512-9HcfDMU6JJ/fp6gJZYGwNE6RknVGS4kBjH1HkNw959mCJi70TVwdipQWv2FEol9uGpi+SZTFtVpJPtEQfayeOw==",
+      "license": "MIT",
+      "dependencies": {
+        "react-router": "7.18.5"
+      },
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+      }
+    },
+    "node_modules/rollup": {
+      "version": "4.68.3",
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-4.68.3.tgz",
+      "integrity": "sha512-wd2gavj7CEQv52rdcVqfUupO/KPIKcoJKxyFWl4cOqYZGMQEOSijJRkliz0dRa7gpkj/h4TRqyWa+dJJi6T0OA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@types/estree": "^1.0.10"
+      },
+      "bin": {
+        "rollup": "dist/bin/rollup"
+      },
+      "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+      },
+      "optionalDependencies": {
+        "@rollup/rollup-android-arm-eabi": "4.68.3",
+        "@rollup/rollup-android-arm64": "4.68.3",
+        "@rollup/rollup-android-x64": "4.68.3",
+        "@rollup/rollup-darwin-arm64": "4.68.3",
+        "@rollup/rollup-darwin-x64": "4.68.3",
+        "@rollup/rollup-freebsd-arm64": "4.68.3",
+        "@rollup/rollup-freebsd-x64": "4.68.3",
+        "@rollup/rollup-linux-arm-gnueabihf": "4.68.3",
+        "@rollup/rollup-linux-arm-musleabihf": "4.68.3",
+        "@rollup/rollup-linux-arm64-gnu": "4.68.3",
+        "@rollup/rollup-linux-arm64-musl": "4.68.3",
+        "@rollup/rollup-linux-loong64-gnu": "4.68.3",
+        "@rollup/rollup-linux-loong64-musl": "4.68.3",
+        "@rollup/rollup-linux-ppc64-gnu": "4.68.3",
+        "@rollup/rollup-linux-ppc64-musl": "4.68.3",
+        "@rollup/rollup-linux-riscv64-gnu": "4.68.3",
+        "@rollup/rollup-linux-riscv64-musl": "4.68.3",
+        "@rollup/rollup-linux-s390x-gnu": "4.68.3",
+        "@rollup/rollup-linux-x64-gnu": "4.68.3",
+        "@rollup/rollup-linux-x64-musl": "4.68.3",
+        "@rollup/rollup-openbsd-x64": "4.68.3",
+        "@rollup/rollup-openharmony-arm64": "4.68.3",
+        "@rollup/rollup-win32-arm64-msvc": "4.68.3",
+        "@rollup/rollup-win32-ia32-msvc": "4.68.3",
+        "@rollup/rollup-win32-x64-gnu": "4.68.3",
+        "@rollup/rollup-win32-x64-msvc": "4.68.3",
+        "fsevents": "~2.3.2"
+      }
+    },
+    "node_modules/scheduler": {
+      "version": "0.28.0",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz",
+      "integrity": "sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==",
+      "license": "MIT"
+    },
+    "node_modules/semver": {
+      "version": "6.3.2",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.2.tgz",
+      "integrity": "sha512-GYrCADwpu6yV5OAvchkQ27Z5wwMxWAEMg5NNWjyHh/5DboFFqbdbvYNIvZouQpxXyeMPoTOh0vdPYKlf0ZswdQ==",
+      "dev": true,
+      "license": "ISC",
+      "bin": {
+        "semver": "bin/semver.js"
+      }
+    },
+    "node_modules/set-cookie-parser": {
+      "version": "2.7.3",
+      "resolved": "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.3.tgz",
+      "integrity": "sha512-irZHtTqurLna57KQG/s+fzOwv/J6XSH4cs8M/vsrY3uCaQ3S6+QJguAH0WdN47SXlk82voMZ4naWMQf8fdEoIg==",
+      "license": "MIT"
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+      "integrity": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==",
+      "dev": true,
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/tinyglobby": {
+      "version": "0.2.17",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "fdir": "^6.5.0",
+        "picomatch": "^4.0.4"
+      },
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/SuperchupuDev"
+      }
+    },
+    "node_modules/typescript": {
+      "version": "5.8.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz",
+      "integrity": "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=14.17"
+      }
+    },
+    "node_modules/update-browserslist-db": {
+      "version": "1.3.4",
+      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.4.tgz",
+      "integrity": "sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "escalade": "^3.2.0",
+        "picocolors": "^1.1.1"
+      },
+      "bin": {
+        "update-browserslist-db": "cli.js"
+      },
+      "peerDependencies": {
+        "browserslist": ">= 4.21.0"
+      }
+    },
+    "node_modules/vite": {
+      "version": "7.3.8",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-7.3.8.tgz",
+      "integrity": "sha512-3tTi78MAKhVk9h+YZVXMQ8POmneJuE97QUPAWtJghHzhH7BAyiqQOC2KZh1DWOsu/USB2cRXhznPByaabvYXfw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "fdir": "^6.5.0",
+        "picomatch": "^4.0.3",
+        "postcss": "^8.5.6",
+        "rollup": "^4.43.0",
+        "tinyglobby": "^0.2.15"
+      },
+      "bin": {
+        "vite": "bin/vite.js"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "funding": {
+        "url": "https://github.com/vitejs/vite?sponsor=1"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "peerDependencies": {
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "lightningcss": "^1.21.0",
+        "sass": "^1.70.0",
+        "sass-embedded": "^1.70.0",
+        "stylus": ">=0.54.8",
+        "sugarss": "^5.0.0",
+        "terser": "^5.16.0",
+        "tsx": "^4.8.1",
+        "yaml": "^2.4.2"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "lightningcss": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "tsx": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/yallist": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
+      "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==",
+      "dev": true,
+      "license": "ISC"
+    }
+  }
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\package.json ==========
+{
+  "name": "shykey-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  }
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\README.md ==========
+# Shykey frontend
+
+Shykey is a mobile-first React application built with Vite and TypeScript. It keeps the original prototypeâ€™s phone-width canvas, gradient backdrop, typography, mode colors, mascot, and mission-to-check-in loop while separating each screen and its reusable UI.
+
+## Run locally
+
+```sh
+npm install
+npm run dev
+```
+
+Create and verify the production build with `npm run build`, then preview it with `npm run preview`.
+
+## Project structure
+
+```text
+src/
+  components/  Shared buttons, mascot, mode cards, iconography, and screen helpers
+  data/        Temporary demo content and sample readings
+  hooks/       Shared demo state and theme behavior
+  layouts/     Shared routed application shell
+  pages/       Home, Mission, Check-in, Win, Chat, Read, and Profile screens
+  services/    Mock service and typed FastAPI-compatible service adapter
+  styles/      Design tokens, responsive styling, and reusable UI styles
+  types/       Shared application and service contracts
+  utils/       Local demo persistence and optional haptics
+```
+
+The app uses React Router paths `/`, `/mission`, `/checkin`, `/win`, `/chat`, `/read`, and `/profile`. `mockApi` is the active service, so screens work without a backend. Mock copy and example outputs live in `src/data/mockData.ts`; service contracts and the replaceable API adapter live in `src/services/`. The adapter targets documented `/v1` FastAPI endpoints and can be created with `createApiService(baseUrl, getAccessToken)` when the backend is ready. Client-side streak and mission data are demo state, not authoritative records.
+
+## Notes
+
+- Demo progress is stored locally under `shykey:v1`; reset it from Profile.
+- The message-reading screen uses fixed illustrative readings. It does not send or persist pasted text in the mock experience.
+- The UI uses the documented fixed support levels without presenting them as probabilities.
+- No PWA, authentication, or live backend integration is enabled in this frontend milestone.
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\tsconfig.app.json ==========
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\tsconfig.json ==========
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\tsconfig.node.json ==========
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true
+  },
+  "include": ["vite.config.ts"]
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\vite.config.ts ==========
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+});
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\.vite\deps\package.json ==========
+{
+  "type": "module"
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\.vite\deps\_metadata.json ==========
+{
+  "hash": "64e5dbc0",
+  "configHash": "27999a88",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "5fc975f6",
+  "optimized": {},
+  "chunks": {}
+}
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\App.tsx ==========
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ShykeyProvider } from './hooks/useShykey';
+import { AppLayout } from './layouts/AppLayout';
+import {
+  ChatPage,
+  CheckinPage,
+  HomePage,
+  MissionPage,
+  NotFoundPage,
+  ProfilePage,
+  ReadPage,
+  WinPage,
+} from './pages';
+
+export function App() {
+  return (
+    <ShykeyProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="mission" element={<MissionPage />} />
+            <Route path="checkin" element={<CheckinPage />} />
+            <Route path="win" element={<WinPage />} />
+            <Route path="chat" element={<ChatPage />} />
+            <Route path="read" element={<ReadPage />} />
+            <Route path="profile" element={<ProfilePage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ShykeyProvider>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\main.tsx ==========
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
+import './styles/index.css';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\Button.tsx ==========
+import type { ButtonHTMLAttributes, PropsWithChildren } from 'react';
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'ghost' | 'option' | 'icon' | 'chip';
+}
+
+export function Button({ variant = 'primary', className = '', children, ...props }: PropsWithChildren<ButtonProps>) {
+  return (
+    <button className={`button button-${variant} ${className}`.trim()} {...props}>
+      {children}
+    </button>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\Icon.tsx ==========
+interface IconProps {
+  path: string;
+  size?: number;
+}
+
+export function Icon({ path, size = 22 }: IconProps) {
+  return (
+    <svg
+      aria-hidden="true"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d={path} />
+    </svg>
+  );
+}
+
+export const ICONS = {
+  chat: 'M4 5h16v11H9l-5 4z',
+  read: 'M9 4h6v3H9zM7 5H5v16h14V5h-2M8 12h8M8 16h5',
+  close: 'M6 6l12 12M18 6L6 18',
+  back: 'M15 5l-7 7 7 7',
+} as const;
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\index.ts ==========
+export { Button } from './Button';
+export { Icon, ICONS } from './Icon';
+export { Mascot } from './Mascot';
+export { ModeCard } from './ModeCard';
+export { Screen } from './Screen';
+export { ScreenHeader } from './ScreenHeader';
+export { StreakWeek } from './StreakWeek';
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\Mascot.tsx ==========
+interface MascotProps {
+  size?: number;
+  happy?: boolean;
+}
+
+export function Mascot({ size = 64, happy = false }: MascotProps) {
+  return (
+    <div className={`mascot${happy ? ' happy' : ''}`} style={{ width: size, height: size }} aria-label="Shykey mascot">
+      <i className="eye" />
+      <i className="eye" />
+      <i className="mouth" />
+    </div>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\ModeCard.tsx ==========
+import type { KeyboardEvent } from 'react';
+import type { Mode } from '../types';
+
+interface ModeCardProps {
+  mode: Mode;
+  done?: boolean;
+  onSelect(): void;
+}
+
+export function ModeCard({ mode, done = false, onSelect }: ModeCardProps) {
+  function onKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onSelect();
+    }
+  }
+
+  return (
+    <div
+      className="mode-card"
+      role="button"
+      tabIndex={0}
+      style={{ background: mode.color }}
+      onClick={onSelect}
+      onKeyDown={onKeyDown}
+    >
+      <span className="tag">{done ? 'Done âœ“' : 'Daily'}</span>
+      <div className="stack-illustration" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+      </div>
+      <b>{mode.title}</b>
+      <p>{mode.description}</p>
+    </div>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\Screen.tsx ==========
+import type { PropsWithChildren } from 'react';
+
+export function Screen({ children, className = '' }: PropsWithChildren<{ className?: string }>) {
+  return <main className={`screen ${className}`.trim()}>{children}</main>;
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\ScreenHeader.tsx ==========
+import { useNavigate } from 'react-router-dom';
+import { Button } from './Button';
+import { Icon, ICONS } from './Icon';
+
+export function ScreenHeader() {
+  const navigate = useNavigate();
+  return (
+    <div className="top">
+      <Button className="icon-button close-button" variant="icon" onClick={() => navigate('/')} aria-label="Back home">
+        <Icon path={ICONS.close} />
+      </Button>
+    </div>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\components\StreakWeek.tsx ==========
+interface StreakWeekProps {
+  streak: number;
+  doneToday: boolean;
+}
+
+export function StreakWeek({ streak, doneToday }: StreakWeekProps) {
+  const today = new Date().getDay();
+  return (
+    <div className="week" aria-label="This week's activity">
+      {['s', 'm', 't', 'w', 't', 'f', 's'].map((label, day) => {
+        let state = '';
+        if (day === today) state = doneToday ? 'complete' : 'current';
+        else if (day < today) state = day >= today - (doneToday ? streak - 1 : streak) ? 'complete' : 'missed';
+        return (
+          <div key={`${label}-${day}`}>
+            <i className={state} aria-label={state || 'upcoming'} />
+            <span>{label}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\data\mockData.ts ==========
+import type { Mode, ProfileStats, ReadingResult } from '../types';
+
+export const MODES: Mode[] = [
+  {
+    key: 'professional',
+    name: 'Professional',
+    color: 'var(--pro)',
+    title: 'Ask one real question',
+    description: 'Build professional connections, one small hello at a time.',
+    task: 'Ask a colleague one real question about their work',
+    why: 'Small, low-stakes asks make bigger conversations feel normal.',
+    smallTask: 'Say hi to someone and mention one thing about your day.',
+  },
+  {
+    key: 'emotions',
+    name: 'Emotions online',
+    color: 'var(--emo)',
+    title: 'Pause before replying',
+    description: 'Stay steady when a message stings.',
+    task: 'Wait ten minutes before replying to one tense message',
+    why: 'The gap between feeling and replying is where calm lives.',
+    smallTask: 'Take three slow breaths before you reply to anything today.',
+  },
+  {
+    key: 'flirting',
+    name: 'Flirting & dating',
+    color: 'var(--flirt)',
+    title: 'Compliment a Stranger',
+    description: 'Build social confidence by giving genuine compliments.',
+    task: 'Give a genuine compliment to a stranger',
+    why: 'Warm, specific words get easy with repetition, and strangers almost always smile.',
+    smallTask: 'Smile and say good morning to someone you pass.',
+  },
+];
+
+export const INITIAL_STATS: ProfileStats = {
+  streak: 3,
+  reps: 12,
+  best: 3,
+  date: null,
+};
+
+export const COACH_OPENING = 'Before I write anything: whatâ€™s the situation?';
+
+export const COACH_QUESTIONS = [
+  'Who is this with, and how well do you know them?',
+  'What would you like to happen afterwards?',
+  'Whatâ€™s the smallest real thing you could do today?',
+];
+
+export const SAMPLE_READING: ReadingResult = {
+  readings: [
+    { label: 'Theyâ€™re busy', support: 'most_supported', explanation: 'Short replies often just mean bad timing.' },
+    { label: 'Neutral, low energy', support: 'plausible', explanation: 'Some people text in a flat style with everyone.' },
+    { label: 'A bit of distance', support: 'least_supported', explanation: 'Possible, but the least supported by one message.' },
+  ],
+  whatWouldSettleIt: 'Ask one light question, or wait for their next message.',
+};
+
+export const COACH_STARTERS = ['Texting someone new', 'Awkward at work', 'A tense message'];
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\hooks\useShykey.tsx ==========
+import { createContext, useContext, useEffect, useMemo, useState, type PropsWithChildren } from 'react';
+import { INITIAL_STATS, MODES } from '../data/mockData';
+import { mockApi } from '../services';
+import type { AppServices, CheckinOutcome, ModeKey, Mission, ProfileStats } from '../types';
+import { buzz, todayKey } from '../utils/haptics';
+import { clearStats, loadStats, saveStats } from '../utils/storage';
+
+interface ShykeyContextValue {
+  stats: ProfileStats;
+  modeKey: ModeKey;
+  smallMission: boolean;
+  mission: Mission | null;
+  assignmentId: string | null;
+  doneToday: boolean;
+  selectMode(mode: ModeKey): void;
+  loadMission(small?: boolean, mode?: ModeKey): Promise<void>;
+  setSmallMission(small: boolean): void;
+  commitMission(): Promise<void>;
+  checkIn(outcome: CheckinOutcome): Promise<void>;
+  resetDemo(): void;
+  services: AppServices;
+}
+
+const ShykeyContext = createContext<ShykeyContextValue | null>(null);
+
+export function ShykeyProvider({ children }: PropsWithChildren) {
+  const [stats, setStats] = useState(() => loadStats(INITIAL_STATS));
+  const [modeKey, setModeKey] = useState<ModeKey>('flirting');
+  const [smallMission, setSmallMission] = useState(false);
+  const [mission, setMission] = useState<Mission | null>(null);
+  const [assignmentId, setAssignmentId] = useState<string | null>(null);
+  const [parentAssignmentId, setParentAssignmentId] = useState<string | null>(null);
+
+  useEffect(() => saveStats(stats), [stats]);
+
+  const value = useMemo<ShykeyContextValue>(() => ({
+    stats,
+    modeKey,
+    smallMission,
+    mission,
+    assignmentId,
+    doneToday: stats.date === todayKey(),
+    services: mockApi,
+    selectMode(mode) {
+      setModeKey(mode);
+      setSmallMission(false);
+    },
+    async loadMission(small = smallMission, selectedMode = modeKey) {
+      const selected = MODES.find((item) => item.key === selectedMode) ?? MODES[2];
+      const result = await mockApi.getMission(selected.key, small ? 'small' : 'full');
+      setMission(result);
+      setSmallMission(small);
+    },
+    setSmallMission,
+    async commitMission() {
+      buzz();
+      setAssignmentId(await mockApi.commitMission(mission, parentAssignmentId));
+      setParentAssignmentId(null);
+    },
+    async checkIn(outcome) {
+      buzz();
+      await mockApi.checkIn(assignmentId, outcome);
+      if (outcome === 'not_yet') {
+        setParentAssignmentId(assignmentId);
+        setAssignmentId(null);
+        return;
+      }
+      setStats((current) => {
+        if (current.date === todayKey()) return current;
+        return {
+          ...current,
+          streak: current.streak + 1,
+          reps: current.reps + (outcome === 'done' ? 1 : 0),
+          best: Math.max(current.best, current.streak + 1),
+          date: todayKey(),
+        };
+      });
+    },
+    resetDemo() {
+      clearStats();
+      setStats(INITIAL_STATS);
+      setModeKey('flirting');
+      setSmallMission(false);
+      setMission(null);
+      setAssignmentId(null);
+      setParentAssignmentId(null);
+    },
+  }), [stats, modeKey, smallMission, mission, assignmentId, parentAssignmentId]);
+
+  return <ShykeyContext.Provider value={value}>{children}</ShykeyContext.Provider>;
+}
+
+export function useShykey(): ShykeyContextValue {
+  const context = useContext(ShykeyContext);
+  if (!context) throw new Error('useShykey must be used inside ShykeyProvider.');
+  return context;
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\hooks\useTheme.ts ==========
+import { useState } from 'react';
+
+export function useTheme() {
+  const [dark, setDark] = useState(
+    document.documentElement.dataset.theme
+      ? document.documentElement.dataset.theme === 'dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches,
+  );
+
+  function toggleTheme() {
+    const next = !dark;
+    document.documentElement.dataset.theme = next ? 'dark' : 'light';
+    setDark(next);
+  }
+
+  return { dark, toggleTheme };
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\layouts\AppLayout.tsx ==========
+import { Outlet } from 'react-router-dom';
+
+export function AppLayout() {
+  return (
+    <div className="app-frame">
+      <Outlet />
+    </div>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\ChatPage.tsx ==========
+import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button, Icon, ICONS, Mascot, Screen } from '../components';
+import { COACH_OPENING, COACH_STARTERS } from '../data/mockData';
+import { useShykey } from '../hooks/useShykey';
+
+interface Message {
+  from: 'coach' | 'you';
+  text: string;
+}
+
+export function ChatPage() {
+  const { services, selectMode, loadMission } = useShykey();
+  const navigate = useNavigate();
+  const [messages, setMessages] = useState<Message[]>([{ from: 'coach', text: COACH_OPENING }]);
+  const [value, setValue] = useState('');
+  const [turn, setTurn] = useState(0);
+  const [conversationId, setConversationId] = useState<string | null>(null);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
+  const end = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    end.current?.scrollIntoView({ block: 'end' });
+  }, [messages]);
+
+  async function send(text: string) {
+    if (!text.trim() || sending) return;
+    const nextTurn = turn + 1;
+    setTurn(nextTurn);
+    setMessages((current) => [...current, { from: 'you', text: text.trim() }]);
+    setValue('');
+    setSending(true);
+    setError('');
+    try {
+      const reply = await services.sendCoachMessage(conversationId, text.trim(), nextTurn);
+      setConversationId(reply.conversationId);
+      setMessages((current) => [...current, { from: 'coach', text: reply.text }]);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'The coach could not reply. Please try again.');
+    } finally {
+      setSending(false);
+    }
+  }
+
+  async function openMission() {
+    selectMode('professional');
+    await loadMission(false, 'professional');
+    navigate('/mission');
+  }
+
+  return (
+    <Screen className="chat-screen">
+      <div className="top chat-header">
+        <div className="coach-identity"><Mascot size={40} /><b>Coach</b></div>
+        <Button className="icon-button" variant="icon" onClick={() => navigate('/')} aria-label="Close chat"><Icon path={ICONS.close} /></Button>
+      </div>
+      <div className="chat-messages" aria-live="polite">
+        {messages.map((message, index) => <div key={index} className={`bubble ${message.from}`}>{message.text}</div>)}
+        {sending && <div className="bubble coach">Thinkingâ€¦</div>}
+        <div ref={end} />
+      </div>
+      {turn === 0 && (
+        <div className="chips">
+          {COACH_STARTERS.map((starter) => <Button key={starter} variant="chip" onClick={() => void send(starter)}>{starter}</Button>)}
+        </div>
+      )}
+      {turn > 3 && (
+        <div className="chips">
+          <Button variant="chip" onClick={() => void openMission()}>Turn it into a mission</Button>
+          <Button variant="chip" onClick={() => setMessages((current) => [...current, { from: 'coach', text: 'Send me your own version first. Iâ€™ll edit it so it still sounds like you.' }])}>Draft it for me</Button>
+        </div>
+      )}
+      {error && <p className="form-error" role="alert">{error}</p>}
+      <form className="input-row chat-input" onSubmit={(event) => { event.preventDefault(); void send(value); }}>
+        <input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Type here" aria-label="Message" />
+        <Button type="submit" disabled={sending}>Send</Button>
+      </form>
+    </Screen>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\CheckinPage.tsx ==========
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button, Mascot, Screen, ScreenHeader } from '../components';
+import { useShykey } from '../hooks/useShykey';
+
+export function CheckinPage() {
+  const { checkIn, loadMission } = useShykey();
+  const navigate = useNavigate();
+  const [notYet, setNotYet] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState('');
+
+  async function shrinkMission() {
+    setSaving(true);
+    setError('');
+    try {
+      await checkIn('not_yet');
+      await loadMission(true);
+      navigate('/mission');
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Could not save your check-in. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function finish(outcome: 'done' | 'partial') {
+    setSaving(true);
+    setError('');
+    try {
+      await checkIn(outcome);
+      navigate('/win');
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Could not save your check-in. Please try again.');
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <Screen>
+      <ScreenHeader />
+      <p className="eyebrow checkin-label">Next-day check-in (shown now so you can try it)</p>
+      <h1 className="big">{notYet ? 'No shame. Smaller tomorrow.' : 'Did you do it?'}</h1>
+      <div className="stage"><Mascot size={180} /></div>
+      {notYet ? (
+        <>
+          <Button disabled={saving} onClick={() => void shrinkMission()}>{saving ? 'Savingâ€¦' : 'Make it smaller'}</Button>
+          <Button variant="ghost" disabled={saving} onClick={() => navigate('/')}>Back home</Button>
+        </>
+      ) : (
+        <div className="checkin-options">
+          <Button disabled={saving} onClick={() => void finish('done')}>Yes, I did it</Button>
+          <Button variant="option" disabled={saving} onClick={() => void finish('partial')}>Kind of</Button>
+          <Button variant="ghost" disabled={saving} onClick={() => setNotYet(true)}>Not yet</Button>
+        </div>
+      )}
+      {error && <p className="form-error" role="alert">{error}</p>}
+    </Screen>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\HomePage.tsx ==========
+import { useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { MODES } from '../data/mockData';
+import { useShykey } from '../hooks/useShykey';
+import { buzz } from '../utils/haptics';
+import { Button, Icon, ICONS, Mascot, ModeCard, Screen, StreakWeek } from '../components';
+
+export function HomePage() {
+  const { stats, doneToday, selectMode, loadMission } = useShykey();
+  const navigate = useNavigate();
+  const carousel = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = carousel.current;
+    if (element) element.scrollLeft = (element.scrollWidth / 3) * 2;
+  }, []);
+
+  async function openMission(mode: (typeof MODES)[number]['key']) {
+    buzz();
+    selectMode(mode);
+    await loadMission(false, mode);
+    navigate('/mission');
+  }
+
+  return (
+    <Screen className="home-screen">
+      <div className="top">
+        <Button className="streak-pill" variant="icon" onClick={() => navigate('/profile')} aria-label="View profile and streak">
+          <Flame />
+          {stats.streak}
+        </Button>
+        <Button className="avatar" variant="icon" onClick={() => navigate('/profile')} aria-label="Profile">ðŸ™‚</Button>
+      </div>
+      <h1 className="big home-title">
+        {doneToday ? 'Rep logged. See you tomorrow.' : `Day ${stats.streak + 1}. New day, new reps.`}
+      </h1>
+      <StreakWeek streak={stats.streak} doneToday={doneToday} />
+      <div className="carousel" ref={carousel} aria-label="Choose a daily mode">
+        {[MODES[2], MODES[0], MODES[1]].map((mode) => (
+          <ModeCard
+            key={mode.key}
+            mode={mode}
+            done={doneToday && mode.key === 'flirting'}
+            onSelect={() => void openMission(mode.key)}
+          />
+        ))}
+      </div>
+      <div className="home-dock">
+        <Link className="mascot-link" to="/chat" aria-label="Talk to coach"><Mascot size={64} /></Link>
+        <div className="dock-actions">
+          <Link className="icon-button" to="/read" aria-label="Read a message"><Icon path={ICONS.read} /></Link>
+          <Link className="icon-button" to="/chat" aria-label="Chat with coach"><Icon path={ICONS.chat} /></Link>
+        </div>
+      </div>
+    </Screen>
+  );
+}
+
+function Flame() {
+  return (
+    <svg aria-hidden="true" width="20" height="24" viewBox="0 0 20 24">
+      <path d="M10 0c1 5 8 8 8 15a8 8 0 0 1-16 0c0-3 2-5 3-7 1 2 2 3 3 3 0-4-1-6 2-11z" fill="var(--flame)" />
+    </svg>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\index.ts ==========
+export { ChatPage } from './ChatPage';
+export { CheckinPage } from './CheckinPage';
+export { HomePage } from './HomePage';
+export { MissionPage } from './MissionPage';
+export { NotFoundPage } from './NotFoundPage';
+export { ProfilePage } from './ProfilePage';
+export { ReadPage } from './ReadPage';
+export { WinPage } from './WinPage';
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\MissionPage.tsx ==========
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button, Mascot, Screen, ScreenHeader } from '../components';
+import { MODES } from '../data/mockData';
+import { useShykey } from '../hooks/useShykey';
+
+export function MissionPage() {
+  const { modeKey, mission, smallMission, setSmallMission, loadMission, commitMission } = useShykey();
+  const navigate = useNavigate();
+  const [step, setStep] = useState(0);
+  const [committing, setCommitting] = useState(false);
+  const [error, setError] = useState('');
+  const mode = MODES.find((item) => item.key === modeKey) ?? MODES[2];
+
+  useEffect(() => {
+    if (!mission || mission.modeKey !== modeKey || (mission.variant === 'small') !== smallMission) {
+      void loadMission(smallMission);
+    }
+  }, [mission, modeKey, smallMission, loadMission]);
+
+  const task = mission?.task ?? mode.task;
+  const labels = ['Todayâ€™s mission', 'Why this works', 'Your plan'];
+  const body = [task, mode.why, task];
+
+  function makeSmaller() {
+    setSmallMission(!smallMission);
+  }
+
+  async function advance() {
+    if (step < 2) {
+      setStep(step + 1);
+      return;
+    }
+    setCommitting(true);
+    setError('');
+    try {
+      await commitMission();
+      navigate('/checkin');
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Could not save your mission. Please try again.');
+    } finally {
+      setCommitting(false);
+    }
+  }
+
+  return (
+    <Screen>
+      <ScreenHeader />
+      <div className="mission-copy" style={{ marginTop: 22 }}>
+        <p className="eyebrow">{labels[step]}</p>
+        <h1 className={step === 1 ? 'mission-why' : 'big'}>{body[step]}</h1>
+      </div>
+      <div className="stage">
+        <div className="glow" style={{ background: mode.color }} />
+        <Mascot size={200} happy={step === 2} />
+      </div>
+      <div className="dots" aria-label={`Step ${step + 1} of 3`}>
+        {[0, 1, 2].map((item) => <i key={item} className={item === step ? 'active' : ''} />)}
+      </div>
+      {step === 1 && (
+        <Button variant="ghost" onClick={makeSmaller}>
+          {smallMission ? 'Use the full version' : 'Make it smaller'}
+        </Button>
+      )}
+      {error && <p className="form-error" role="alert">{error}</p>}
+      <Button onClick={() => void advance()} disabled={committing}>
+        {committing ? 'Savingâ€¦' : step < 2 ? 'Next' : 'Iâ€™ll do it today'}
+      </Button>
+    </Screen>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\NotFoundPage.tsx ==========
+import { Link } from 'react-router-dom';
+import { Screen } from '../components';
+
+export function NotFoundPage() {
+  return (
+    <Screen className="not-found">
+      <h1 className="big">That screen isnâ€™t here.</h1>
+      <Link to="/">Back home</Link>
+    </Screen>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\ProfilePage.tsx ==========
+import { useNavigate } from 'react-router-dom';
+import { Button, Screen, ScreenHeader } from '../components';
+import { MODES } from '../data/mockData';
+import { useShykey } from '../hooks/useShykey';
+import { useTheme } from '../hooks/useTheme';
+
+export function ProfilePage() {
+  const { stats, resetDemo } = useShykey();
+  const { dark, toggleTheme } = useTheme();
+  const navigate = useNavigate();
+
+  function reset() {
+    resetDemo();
+    navigate('/');
+  }
+
+  return (
+    <Screen>
+      <ScreenHeader />
+      <h1 className="profile-title">Your reps</h1>
+      <div className="stats-grid">
+        <div className="stat"><b>{stats.streak}</b><small>Current streak</small></div>
+        <div className="stat"><b>{stats.best}</b><small>Best streak</small></div>
+        <div className="stat"><b>{stats.reps}</b><small>Missions done</small></div>
+        <div className="stat"><b>{MODES.length}</b><small>Modes unlocked</small></div>
+      </div>
+      <div className="mode-tags">{MODES.map((mode) => <span className="tag" style={{ background: mode.color }} key={mode.key}>{mode.name}</span>)}</div>
+      <div className="fill-space" />
+      <Button variant="option" onClick={toggleTheme}>Switch to {dark ? 'light' : 'dark'} mode</Button>
+      <Button variant="ghost" onClick={reset}>Reset demo data</Button>
+    </Screen>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\ReadPage.tsx ==========
+import { useState, type FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button, Screen, ScreenHeader } from '../components';
+import { useShykey } from '../hooks/useShykey';
+import type { ReadingResult } from '../types';
+
+export function ReadPage() {
+  const { services, selectMode, loadMission } = useShykey();
+  const navigate = useNavigate();
+  const [text, setText] = useState('');
+  const [result, setResult] = useState<ReadingResult | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  async function read(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!text.trim()) return;
+    setLoading(true);
+    setError('');
+    try {
+      setResult(await services.readMessage(text.trim()));
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Could not read that message. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function startMission() {
+    selectMode('emotions');
+    await loadMission(false);
+    navigate('/mission');
+  }
+
+  return (
+    <Screen>
+      <ScreenHeader />
+      <h1 className="read-title">{result ? 'Here are 3 readings' : 'Paste a message'}</h1>
+      {!result ? (
+        <form className="read-form" onSubmit={(event) => void read(event)}>
+          <textarea value={text} onChange={(event) => setText(event.target.value)} placeholder="Paste what they sent" aria-label="Message to read" maxLength={2000} />
+          <p className="note">Text stays in this demo and is not sent to a service.</p>
+          {error && <p className="form-error" role="alert">{error}</p>}
+          <div className="fill-space" />
+          <Button type="submit" disabled={!text.trim() || loading}>{loading ? 'Readingâ€¦' : 'Read it'}</Button>
+        </form>
+      ) : (
+        <div className="reading-results">
+          {result.readings.map((reading) => (
+            <div className="reading-card" key={reading.label}>
+              <b>{reading.label}<span className={`support ${reading.support}`}>{supportLabel(reading.support)}</span></b>
+              <span className={`support-bar ${reading.support}`}><i /></span>
+              <p>{reading.explanation}</p>
+            </div>
+          ))}
+          <p className="note">What would settle it: {result.whatWouldSettleIt} Sample readings only; AI connects later.</p>
+          <Button className="reading-mission" onClick={() => void startMission()}>Turn this into a mission</Button>
+        </div>
+      )}
+    </Screen>
+  );
+}
+
+function supportLabel(support: ReadingResult['readings'][number]['support']) {
+  if (support === 'most_supported') return 'Most supported';
+  if (support === 'plausible') return 'Plausible';
+  return 'Least supported';
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\pages\WinPage.tsx ==========
+import { useMemo, useState, type FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button, Mascot, Screen } from '../components';
+import { useShykey } from '../hooks/useShykey';
+
+const CONFETTI_COLORS = ['#FF6A13', '#8FD19A', '#F4C0DA', '#B6CFE8'];
+
+export function WinPage() {
+  const { stats, services } = useShykey();
+  const navigate = useNavigate();
+  const [offer, setOffer] = useState<'closed' | 'details' | 'email' | 'success'>('closed');
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const confetti = useMemo(
+    () => Array.from({ length: 22 }, (_, index) => ({
+      left: `${Math.random() * 100}%`,
+      background: CONFETTI_COLORS[index % CONFETTI_COLORS.length],
+      animationDelay: `${index * 0.08}s`,
+    })),
+    [],
+  );
+
+  async function joinList(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setError('');
+    try {
+      await services.joinWaitlist(email.trim());
+      setOffer('success');
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Could not join the list. Please try again.');
+    }
+  }
+
+  return (
+    <Screen className="win-screen">
+      <div className="confetti" aria-hidden="true">{confetti.map((piece, index) => <i key={index} style={piece} />)}</div>
+      <p className="eyebrow win-label">Rep logged</p>
+      <div className="big-number"><Flame />{stats.streak}</div>
+      <h2 className="win-title">day streak. Thatâ€™s real-world courage.</h2>
+      <div className="stage"><Mascot size={170} happy /></div>
+      <Button className="offer-button" onClick={() => setOffer('details')}>See the 6-week program</Button>
+      <Button variant="ghost" onClick={() => navigate('/')}>Back home</Button>
+      {offer !== 'closed' && (
+        <div className="offer-overlay" onClick={() => setOffer('closed')}>
+          <section className="offer-sheet" role="dialog" aria-modal="true" aria-labelledby="offer-title" onClick={(event) => event.stopPropagation()}>
+            {offer === 'details' ? (
+              <>
+                <h2 id="offer-title">6 weeks to talking like yourself</h2>
+                <ul>
+                  <li>A graded mission every day</li>
+                  <li>Check-ins that notice your progress</li>
+                  <li>Support that fades as you grow</li>
+                </ul>
+                <Button onClick={() => setOffer('email')}>Join the early list</Button>
+              </>
+            ) : offer === 'email' ? (
+              <>
+                <h2 id="offer-title">Join the early list</h2>
+                <p className="eyebrow offer-description">The program isnâ€™t live yet. Leave an email and weâ€™ll tell you first.</p>
+                <form className="input-row" onSubmit={(event) => void joinList(event)}>
+                  <input value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@email.com" type="email" required aria-label="Email" />
+                  <Button type="submit">Save</Button>
+                </form>
+                {error && <p className="form-error" role="alert">{error}</p>}
+              </>
+            ) : (
+              <>
+                <h2 id="offer-title">Youâ€™re on the list.</h2>
+                <p className="eyebrow offer-description">The program isnâ€™t live yet. Weâ€™ll tell you first.</p>
+                <Button onClick={() => setOffer('closed')}>Done</Button>
+              </>
+            )}
+          </section>
+        </div>
+      )}
+    </Screen>
+  );
+}
+
+function Flame() {
+  return (
+    <svg aria-hidden="true" width="52" height="64" viewBox="0 0 20 24">
+      <path d="M10 0c1 5 8 8 8 15a8 8 0 0 1-16 0c0-3 2-5 3-7 1 2 2 3 3 3 0-4-1-6 2-11z" fill="var(--flame)" />
+    </svg>
+  );
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\services\api.ts ==========
+import type { AppServices, ChatReply, ModeKey, Mission, ReadingResult } from '../types';
+
+interface ApiError {
+  error?: {
+    message?: string;
+  };
+}
+
+interface MissionResponse {
+  template_id: string;
+  mode_key: ModeKey;
+  variant: 'full' | 'small';
+  task: string;
+  why: string;
+}
+
+interface AssignmentResponse {
+  id: string;
+}
+
+interface CoachResponse {
+  reply: { text: string };
+}
+
+interface ReadResponse {
+  readings: ReadingResult['readings'];
+  what_would_settle_it: string;
+}
+
+export type AccessTokenProvider = () => string | null | Promise<string | null>;
+
+async function request<T>(
+  baseUrl: string,
+  path: string,
+  init?: RequestInit,
+  getAccessToken?: AccessTokenProvider,
+): Promise<T> {
+  const headers = new Headers(init?.headers);
+  headers.set('Content-Type', 'application/json');
+  const token = await getAccessToken?.();
+  if (token) headers.set('Authorization', `Bearer ${token}`);
+
+  const response = await fetch(`${baseUrl.replace(/\/$/, '')}${path}`, {
+    ...init,
+    headers,
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch((): ApiError => ({})) as ApiError;
+    throw new Error(error.error?.message ?? `Request failed (${response.status})`);
+  }
+
+  return response.status === 204 ? undefined as T : response.json() as Promise<T>;
+}
+
+export function createApiService(baseUrl: string, getAccessToken?: AccessTokenProvider): AppServices {
+  return {
+    async getMission(mode: ModeKey, variant: 'full' | 'small'): Promise<Mission> {
+      const query = new URLSearchParams({ mode, variant });
+      const result = await request<MissionResponse>(baseUrl, `/v1/missions/next?${query}`, undefined, getAccessToken);
+      return {
+        templateId: result.template_id,
+        modeKey: result.mode_key,
+        task: result.task,
+        why: result.why,
+        variant: result.variant,
+      };
+    },
+
+    async commitMission(mission: Mission | null, parentAssignmentId?: string | null): Promise<string> {
+      if (!mission) throw new Error('Choose a mission before committing it.');
+      const result = await request<AssignmentResponse>(baseUrl, '/v1/assignments', {
+        method: 'POST',
+        headers: { 'Idempotency-Key': crypto.randomUUID() },
+        body: JSON.stringify({
+          template_id: mission.templateId,
+          variant: mission.variant,
+          source: 'mission',
+          conversation_id: null,
+          read_id: null,
+          parent_assignment_id: parentAssignmentId ?? null,
+          replace_open: false,
+        }),
+      }, getAccessToken);
+      return result.id;
+    },
+
+    async checkIn(assignmentId, outcome): Promise<void> {
+      if (!assignmentId) throw new Error('There is no committed mission to check in.');
+      await request(baseUrl, `/v1/assignments/${assignmentId}/checkin`, {
+        method: 'POST',
+        headers: { 'Idempotency-Key': crypto.randomUUID() },
+        body: JSON.stringify({ outcome }),
+      }, getAccessToken);
+    },
+
+    async sendCoachMessage(conversationId: string | null, text: string): Promise<ChatReply> {
+      let activeConversationId = conversationId;
+      if (!activeConversationId) {
+        const created = await request<{ conversation_id: string; opening: { text: string } }>(
+          baseUrl,
+          '/v1/conversations',
+          { method: 'POST', body: JSON.stringify({ mode_key: 'flirting' }) },
+          getAccessToken,
+        );
+        activeConversationId = created.conversation_id;
+      }
+
+      const result = await request<CoachResponse>(
+        baseUrl,
+        `/v1/conversations/${activeConversationId}/messages`,
+        {
+          method: 'POST',
+          headers: { 'Idempotency-Key': crypto.randomUUID() },
+          body: JSON.stringify({ text, action: null, user_draft: null }),
+        },
+        getAccessToken,
+      );
+      return { conversationId: activeConversationId, text: result.reply.text };
+    },
+
+    async readMessage(text: string): Promise<ReadingResult> {
+      const result = await request<ReadResponse>(baseUrl, '/v1/reads', {
+        method: 'POST',
+        headers: { 'Idempotency-Key': crypto.randomUUID() },
+        body: JSON.stringify({ text }),
+      }, getAccessToken);
+      return { readings: result.readings, whatWouldSettleIt: result.what_would_settle_it };
+    },
+
+    async joinWaitlist(email: string, offerId?: string): Promise<void> {
+      if (!offerId) throw new Error('An offer ID is required to join the waitlist.');
+      await request(baseUrl, '/v1/waitlist', {
+        method: 'POST',
+        headers: { 'Idempotency-Key': crypto.randomUUID() },
+        body: JSON.stringify({ email, consent: true, offer_id: offerId }),
+      }, getAccessToken);
+    },
+  };
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\services\index.ts ==========
+export { createApiService, type AccessTokenProvider } from './api';
+export { mockApi } from './mockApi';
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\services\mockApi.ts ==========
+import { COACH_QUESTIONS, MODES, SAMPLE_READING } from '../data/mockData';
+import type { AppServices, ChatReply, ModeKey, Mission } from '../types';
+
+export const mockApi: AppServices = {
+  async getMission(modeKey: ModeKey, variant: 'full' | 'small'): Promise<Mission> {
+    const mode = MODES.find((item) => item.key === modeKey) ?? MODES[2];
+    return {
+      templateId: `${mode.key}-daily`,
+      modeKey: mode.key,
+      task: variant === 'small' ? mode.smallTask : mode.task,
+      why: mode.why,
+      variant,
+    };
+  },
+
+  async commitMission(mission) {
+    if (!mission) throw new Error('Choose a mission before committing it.');
+    return `mock-assignment-${Date.now()}`;
+  },
+
+  async checkIn(_assignmentId, _outcome) {
+    return Promise.resolve();
+  },
+
+  async sendCoachMessage(conversationId: string | null, _text: string, turn: number): Promise<ChatReply> {
+    const reply = turn <= COACH_QUESTIONS.length
+      ? COACH_QUESTIONS[turn - 1]
+      : 'Got it. A small mission will help more than a script. Want one?';
+    return { conversationId: conversationId ?? 'mock-conversation', text: reply };
+  },
+
+  async readMessage(_text: string) {
+    return SAMPLE_READING;
+  },
+
+  async joinWaitlist(_email: string, _offerId?: string) {
+    return Promise.resolve();
+  },
+};
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\styles\index.css ==========
+:root {
+  --bg: #f2efe9;
+  --ink: #1f2024;
+  --mute: #7a7872;
+  --card: #fff;
+  --flame: #ff6a13;
+  --ok: #8fd19a;
+  --peach: #f3b592;
+  --pro: #b6cfe8;
+  --emo: #d3b8ea;
+  --flirt: #f4c0da;
+  --button: #1f2024;
+  --button-text: #fff;
+  --gradient-one: #b9c9e6;
+  --gradient-two: #d6b4cc;
+  --font: "DM Sans", system-ui, sans-serif;
+  --heading: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif;
+  color-scheme: light;
+  font-family: var(--font);
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--gradient-one), var(--gradient-two));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="dark"] {
+  --bg: #17171a;
+  --ink: #f2efe9;
+  --mute: #9a978f;
+  --card: #26262b;
+  --button: #f2efe9;
+  --button-text: #1f2024;
+  --gradient-one: #2a3350;
+  --gradient-two: #4a2e48;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17171a;
+    --ink: #f2efe9;
+    --mute: #9a978f;
+    --card: #26262b;
+    --button: #f2efe9;
+    --button-text: #1f2024;
+    --gradient-one: #2a3350;
+    --gradient-two: #4a2e48;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, var(--gradient-one), var(--gradient-two));
+  color: var(--ink);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--flame);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+.app-frame {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+  height: 100%;
+  min-height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.screen {
+  display: flex;
+  min-height: 0;
+  padding: 20px 22px 24px;
+  flex: 1;
+  flex-direction: column;
+  animation: enter 0.28s ease-out;
+}
+
+.screen h1,
+.screen h2 {
+  margin: 0;
+  font-family: var(--heading);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.big {
+  font-size: clamp(32px, 9vw, 40px);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--mute);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button {
+  border: 0;
+  font-family: inherit;
+  font-weight: 600;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.button-primary {
+  width: 100%;
+  min-height: 56px;
+  border-radius: 28px;
+  background: var(--button);
+  color: var(--button-text);
+  font-size: 17px;
+}
+
+.button-ghost {
+  padding: 12px;
+  background: transparent;
+  color: var(--mute);
+  font-size: 15px;
+}
+
+.button-option {
+  min-height: 60px;
+  border: 1.5px solid var(--ink);
+  border-radius: 30px;
+  background: var(--card);
+  font-size: 17px;
+}
+
+.button-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--card);
+  place-items: center;
+}
+
+.button-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-button {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--ink);
+  place-items: center;
+  text-decoration: none;
+}
+
+.icon-button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.button-chip {
+  padding: 9px 14px;
+  border: 1.5px solid var(--ink);
+  border-radius: 20px;
+  background: transparent;
+  font-size: 14px;
+}
+
+.top {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-button {
+  margin-left: auto;
+}
+
+.home-title {
+  margin-top: 20px !important;
+}
+
+.streak-pill {
+  display: flex;
+  width: auto;
+  height: 44px;
+  padding: 0 16px;
+  border: 1.5px solid rgb(128 128 128 / 25%);
+  border-radius: 22px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 800;
+  gap: 8px;
+  align-items: center;
+}
+
+.avatar {
+  border: 2px solid var(--ink);
+  background: var(--peach);
+  font-size: 22px;
+}
+
+.week {
+  display: flex;
+  margin: 18px 0 22px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.week div {
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.week i {
+  width: 28px;
+  height: 28px;
+  border: 2px solid rgb(128 128 128 / 30%);
+  border-radius: 50%;
+}
+
+.week i.complete {
+  border-color: transparent;
+  background: var(--ok);
+}
+
+.week i.missed {
+  border-color: transparent;
+  background: rgb(128 128 128 / 25%);
+}
+
+.week i.current {
+  border-color: var(--ok);
+  border-top-color: transparent;
+  animation: spin 2s linear infinite;
+}
+
+.carousel {
+  display: flex;
+  min-height: 0;
+  margin: 0 -22px;
+  padding: 6px 22px 18px;
+  overflow-x: auto;
+  flex: 1;
+  gap: 14px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.mode-card {
+  display: flex;
+  width: 78%;
+  max-height: 430px;
+  border: 1.5px solid var(--ink);
+  border-radius: 34px;
+  padding: 16px 20px;
+  flex: 0 0 78%;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  color: var(--ink);
+  text-align: center;
+  cursor: pointer;
+  scroll-snap-align: center;
+  transition: transform 0.15s ease;
+}
+
+.mode-card:active {
+  transform: scale(0.98);
+}
+
+.mode-card b {
+  margin-top: auto;
+  font-family: var(--heading);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.mode-card p {
+  margin: 6px 0 4px;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.tag {
+  align-self: flex-start;
+  border-radius: 16px;
+  padding: 6px 14px;
+  background: rgb(255 255 255 / 60%);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stack-illustration {
+  display: flex;
+  margin: auto 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack-illustration i {
+  display: block;
+  width: 96px;
+  height: 34px;
+  border: 1.5px solid #1f2024;
+  border-radius: 12px;
+  background: var(--peach);
+  box-shadow: 0 8px 8px -6px rgb(0 0 0 / 25%);
+}
+
+.stack-illustration i:first-child {
+  width: 46px;
+  height: 14px;
+  background: #c9bde0;
+}
+
+.stack-illustration i:last-child {
+  width: 140px;
+  height: 40px;
+}
+
+.home-dock {
+  display: flex;
+  padding-top: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mascot-link {
+  display: block;
+  line-height: 0;
+}
+
+.dock-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.dock-actions .icon-button {
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.mascot {
+  position: relative;
+  flex: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #fff, #dcebec 35%, #a9c7c9);
+  box-shadow: inset -6px -10px 24px rgb(80 120 125 / 25%);
+  animation: bob 4s ease-in-out infinite;
+}
+
+.mascot .eye {
+  position: absolute;
+  top: 66%;
+  width: 7%;
+  height: 8%;
+  border-radius: 50%;
+  background: #222;
+  animation: blink 5s infinite;
+}
+
+.mascot .eye:first-child {
+  left: 25%;
+}
+
+.mascot .eye:nth-child(2) {
+  left: 61%;
+}
+
+.mascot .mouth {
+  position: absolute;
+  top: 72%;
+  left: 43%;
+  width: 10%;
+  height: 4%;
+  border-bottom: 2.5px solid #222;
+  border-radius: 0 0 50% 50%;
+}
+
+.mascot.happy .mouth {
+  left: 40%;
+  width: 16%;
+  height: 8%;
+}
+
+.stage {
+  position: relative;
+  display: grid;
+  min-height: 0;
+  flex: 1;
+  place-items: center;
+}
+
+.glow {
+  position: absolute;
+  width: 140%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  filter: blur(30px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.stage .mascot {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dots {
+  display: flex;
+  margin-bottom: 14px;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgb(128 128 128 / 35%);
+}
+
+.dots i.active {
+  width: 22px;
+  background: var(--ink);
+}
+
+.mission-why {
+  font-size: 28px;
+}
+
+.checkin-label {
+  margin-top: 22px;
+}
+
+.checkin-options {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.big-number {
+  display: flex;
+  font-family: var(--heading);
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.win-label {
+  margin-top: 40px;
+}
+
+.win-title {
+  margin-top: 10px !important;
+  font-size: 28px;
+}
+
+.offer-button {
+  margin-bottom: 6px;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti i {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 16px;
+  border-radius: 3px;
+  animation: fall 2.6s ease-in forwards;
+}
+
+.offer-overlay {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+  align-items: flex-end;
+  animation: enter 0.2s ease-out;
+}
+
+.offer-sheet {
+  width: 100%;
+  border-radius: 34px 34px 0 0;
+  padding: 26px 22px 30px;
+  background: var(--bg);
+}
+
+.offer-sheet h2 {
+  font-size: 28px;
+  text-align: left !important;
+}
+
+.offer-sheet li {
+  margin: 8px 0;
+}
+
+.offer-description {
+  margin-top: 12px;
+  text-align: left;
+}
+
+.input-row {
+  display: flex;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.input-row input,
+.screen textarea {
+  min-width: 0;
+  border: 1.5px solid rgb(128 128 128 / 35%);
+  background: var(--card);
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.input-row input {
+  height: 52px;
+  border-radius: 28px;
+  padding: 0 18px;
+  flex: 1;
+}
+
+.input-row .button-primary {
+  width: auto;
+  height: 52px;
+  min-height: 52px;
+  padding: 0 22px;
+}
+
+.form-error {
+  margin: 8px 0;
+  color: #b42318;
+  font-size: 14px;
+}
+
+.chat-screen {
+  min-height: 0;
+}
+
+.chat-header {
+  flex: none;
+}
+
+.coach-identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coach-identity b {
+  font-family: var(--heading);
+  font-size: 20px;
+}
+
+.chat-messages {
+  display: flex;
+  min-height: 0;
+  padding: 10px 0;
+  overflow-y: auto;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bubble {
+  max-width: 82%;
+  padding: 12px 16px;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 1.4;
+  animation: enter 0.25s ease-out;
+}
+
+.bubble.coach {
+  align-self: flex-start;
+  border-bottom-left-radius: 6px;
+  background: var(--card);
+}
+
+.bubble.you {
+  align-self: flex-end;
+  border-bottom-right-radius: 6px;
+  background: var(--button);
+  color: var(--button-text);
+}
+
+.chips {
+  display: flex;
+  padding: 6px 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chat-input {
+  flex: none;
+}
+
+.screen textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 22px;
+  padding: 14px 18px;
+  resize: none;
+}
+
+.read-title {
+  margin-bottom: 16px !important;
+  font-size: 30px;
+}
+
+.read-form {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.note {
+  margin: 8px 0 0;
+  color: var(--mute);
+  font-size: 13px;
+  text-align: center;
+}
+
+.fill-space {
+  flex: 1;
+}
+
+.reading-results {
+  display: flex;
+  min-height: 0;
+  overflow-y: auto;
+  flex: 1;
+  flex-direction: column;
+}
+
+.reading-card {
+  margin-bottom: 10px;
+  border-radius: 22px;
+  padding: 14px 18px;
+  background: var(--card);
+}
+
+.reading-card b {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.reading-card p {
+  margin: 8px 0 0;
+  color: var(--mute);
+  font-size: 14px;
+}
+
+.support {
+  color: var(--mute);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.support-bar {
+  display: block;
+  height: 8px;
+  margin: 8px 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgb(128 128 128 / 20%);
+}
+
+.support-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--emo);
+}
+
+.support-bar.most_supported i {
+  width: 90%;
+}
+
+.support-bar.plausible i {
+  width: 60%;
+}
+
+.support-bar.least_supported i {
+  width: 35%;
+}
+
+.reading-mission {
+  margin-top: 14px;
+}
+
+.profile-title {
+  margin-top: 6px !important;
+  font-size: 34px;
+}
+
+.stats-grid {
+  display: grid;
+  margin: 22px 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.stat {
+  border-radius: 24px;
+  padding: 16px;
+  background: var(--card);
+}
+
+.stat b {
+  display: block;
+  font-family: var(--heading);
+  font-size: 34px;
+}
+
+.stat small {
+  color: var(--mute);
+  font-weight: 600;
+}
+
+.mode-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.not-found {
+  justify-content: center;
+  gap: 24px;
+}
+
+.not-found a {
+  text-align: center;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bob {
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  97% { transform: scaleY(0.1); }
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(540deg); }
+}
+
+@media (min-width: 600px) {
+  .app-frame {
+    height: min(880px, calc(100% - 32px));
+    margin: 16px auto;
+    border-radius: 44px;
+    box-shadow: 0 30px 80px rgb(0 0 0 / 25%);
+  }
+}
+
+@media (max-height: 720px) and (max-width: 599px) {
+  .screen {
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+
+  .home-title {
+    margin-top: 10px !important;
+  }
+
+  .week {
+    margin: 10px 0 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\types\index.ts ==========
+export type ModeKey = 'professional' | 'emotions' | 'flirting';
+
+export interface Mode {
+  key: ModeKey;
+  name: string;
+  color: string;
+  title: string;
+  description: string;
+  task: string;
+  why: string;
+  smallTask: string;
+}
+
+export interface Mission {
+  templateId: string;
+  modeKey: ModeKey;
+  task: string;
+  why: string;
+  variant: 'full' | 'small';
+}
+
+export interface ProfileStats {
+  streak: number;
+  reps: number;
+  best: number;
+  date: string | null;
+}
+
+export type CheckinOutcome = 'done' | 'partial' | 'not_yet';
+
+export interface ChatReply {
+  conversationId: string;
+  text: string;
+}
+
+export interface Reading {
+  label: string;
+  support: 'most_supported' | 'plausible' | 'least_supported';
+  explanation: string;
+}
+
+export interface ReadingResult {
+  readings: Reading[];
+  whatWouldSettleIt: string;
+}
+
+export interface AppServices {
+  getMission(mode: ModeKey, variant: 'full' | 'small'): Promise<Mission>;
+  commitMission(mission: Mission | null, parentAssignmentId?: string | null): Promise<string>;
+  checkIn(assignmentId: string | null, outcome: CheckinOutcome): Promise<void>;
+  sendCoachMessage(conversationId: string | null, text: string, turn: number): Promise<ChatReply>;
+  readMessage(text: string): Promise<ReadingResult>;
+  joinWaitlist(email: string, offerId?: string): Promise<void>;
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\utils\haptics.ts ==========
+export function buzz(): void {
+  if ('vibrate' in navigator) navigator.vibrate(15);
+}
+
+export function todayKey(): string {
+  return new Date().toDateString();
+}
+
+
+
+========== C:\Users\DELL\Documents\Github_repo\Shykey\frontend\src\utils\storage.ts ==========
+import type { ProfileStats } from '../types';
+
+const STORAGE_KEY = 'shykey:v1';
+
+export function loadStats(fallback: ProfileStats): ProfileStats {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved) return fallback;
+
+    const parsed: unknown = JSON.parse(saved);
+    if (!parsed || typeof parsed !== 'object') return fallback;
+    const value = parsed as Partial<ProfileStats>;
+    if (
+      typeof value.streak !== 'number' || !Number.isInteger(value.streak) || value.streak < 0
+      || typeof value.reps !== 'number' || !Number.isInteger(value.reps) || value.reps < 0
+      || typeof value.best !== 'number' || !Number.isInteger(value.best) || value.best < 0
+      || !(typeof value.date === 'string' || value.date === null)
+    ) return fallback;
+
+    return { streak: value.streak, reps: value.reps, best: value.best, date: value.date };
+  } catch {
+    return fallback;
+  }
+}
+
+export function saveStats(stats: ProfileStats): void {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  } catch {
+    // Local storage can be unavailable in private browsing; the in-memory demo still works.
+  }
+}
+
+export function clearStats(): void {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    // Resetting the in-memory demo still works when local storage is unavailable.
+  }
+}
+
